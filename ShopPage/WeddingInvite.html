@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="WeddingInvite.css">
+</head>
+<body>
+
+    <div id="content-wrapper">
+        <div class="column">
+            <img id="featured" src="img/Wedding invitation/p6.1.jpg" alt="Featured Image">
+
+            <div id="slide-wrapper">
+                <img id="slideLeft" class="arrow" src="icon/arrowhead-thin-outline-to-the-left.png" alt="Left Arrow">
+
+                <div id="slider">
+                    <img class="thumbnail active" src="img/Wedding invitation/p6.1.jpg" alt="Thumbnail 1">
+                    <img class="thumbnail" src="img/Wedding invitation/p6.2.jpg" alt="Thumbnail 2">
+                    <img class="thumbnail" src="img/Wedding invitation/p6.3.jpg" alt="Thumbnail 3">
+                    <img class="thumbnail" src="img/Wedding invitation/p6.4.jpg" alt="Thumbnail 4">
+                </div>
+
+                <img id="slideRight" class="arrow" src="icon/right-arrow.png" alt="Right Arrow">
+            </div>
+        </div>
+
+        <div class="column">
+            <h1 style="font-size: 48px; font-weight: 900; color: #502D14;">Wedding Invitation | Seed Paper</h1>
+            <div class="star-container">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+              <h1 style="font-size: 40px; font-weight: 700;color: #333333;">From 11.000 VND</h1>
+              <p style="font-size: 24px; font-weight: 600;color: #502D14;" >Celebrate your love and the environment with our <br>
+                 eco-friendly seed paper wedding invitations.  
+                <br>After the celebration, your guests can plant the invitation and watch it bloom into a vibrant reminder of your love story.</p>
+                <div class="quantity">
+                    <div class="button">-</div>
+                    <div class="number">0</div>
+                    <div class="button">+</div>
+                </div>
+                <button class="addCartBtn btn-primary">Add to cart</button>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="AlsoLike">
+        <h1>You may also like</h1>
+        <div class="row">
+            <div class="col-3 mr-5">
+                <img src="img/Envelope/p4.1.jpg" alt="">
+                <h2 style="font-weight: bold; font-size: 28px;">Envelope</h2>
+                <h2 style="font-size: 27px;">44.000 VND</h2>
+            </div>
+            <div class="col-3 mr-5">
+                <img src="img/TagName/p5.1.jpg" alt="">
+                <h2 style="font-weight: bold; font-size: 28px">TagName</h2>
+                <h2 style="font-size: 27px;">44.000 VND</h2>
+            </div>
+            <div class="col-3">
+                <img src="img/Wedding invitation/p6.1.jpg" alt="">
+                <h2 style="font-weight: bold; font-size: 28px">Wedding Invitation</h2>
+                <h2 style="font-size: 27px;">11.000 VND</h2>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="contact">
+        <a href="https://www.facebook.com/hanhhhhhhhhh.2466666" target="_blank"> 
+            <img style="margin-right: 20px;" src="icon/fbIcon.png" alt="fb">
+        </a>
+        <a href="https://www.instagram.com/phq.hadd/" target="_blank">
+            <img src="icon/igIcon.png" alt="ig">
+        </a>
+    </div>
+    <script type="text/javascript">
+        let thumbnails = document.getElementsByClassName('thumbnail');
+        let activeImages = document.getElementsByClassName('active');
+
+        for (let i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].addEventListener('mouseover', function() {
+                if (activeImages.length > 0) {
+                    activeImages[0].classList.remove('active');
+                }
+                this.classList.add('active');
+                document.getElementById('featured').src = this.src;
+            });
+        }
+
+        let buttonRight = document.getElementById('slideRight');
+        let buttonLeft = document.getElementById('slideLeft');
+
+        buttonLeft.addEventListener('click', function() {
+            document.getElementById('slider').scrollLeft -= 180;
+        });
+
+        buttonRight.addEventListener('click', function() {
+            document.getElementById('slider').scrollLeft += 180;
+        });
+        // Quantity
+        const decrementButton = document.querySelector('.quantity .button:first-child'); 
+        const incrementButton = document.querySelector('.quantity .button:last-child'); 
+        const quantityDisplay = document.querySelector('.quantity .number');
+
+        let quantity = 0; 
+
+        function updateQuantityDisplay() {
+            quantityDisplay.textContent = quantity;
+        }
+        decrementButton.addEventListener('click', () => {
+            if (quantity > 0) {
+                quantity--;
+                updateQuantityDisplay();
+            }
+        });
+        incrementButton.addEventListener('click', () => {
+            quantity++;
+            updateQuantityDisplay();
+        });
+        updateQuantityDisplay(); 
+    </script>
+</body>
+</html>
