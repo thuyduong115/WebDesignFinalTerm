@@ -16,7 +16,7 @@
     left: 100px;
     top: 200px;
     border-radius: 676.5px;
-background: radial-gradient(50% 50% at 50% 50%, rgba(69, 221, 157, 0.20) 0%, rgba(69, 221, 157, 0.00) 100%);
+background: radial-gradient(50% 50% at 50% 50%, rgba(169, 136, 92, 0.2)0%, rgba(149, 157, 58, 0) 100%);
 filter: blur(28.5px);
 }
 .shape:last-child{
@@ -35,6 +35,8 @@ filter: blur(28.5px);
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin-top: 100px;
+
 }
 
 .form-container {
@@ -87,7 +89,7 @@ filter: blur(28.5px);
     text-transform: uppercase;
     padding: 0 0 2px;
     margin: 0 0 30px;
-    border-bottom: 2px solid #4dc768;
+    border-bottom: 2px solid #47a75b;
 }
 
 .form-container .right-content .form-horizontal {

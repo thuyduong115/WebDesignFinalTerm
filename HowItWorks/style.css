@@ -1,0 +1,552 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: auto; /*tràn full screen */
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
+header{
+  position: relative;
+  overflow: hidden;
+}
+
+
+header::before{
+  content: "";
+  top: 0;
+  bottom: 0;left: 0;right: 0;
+  background-image: url(green-newspaper.avif);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+
+header{
+  background-color: #0000004b;
+    width: 100%;
+    height: 90vh;
+}
+
+
+footer{
+  position: relative;
+  overflow: hidden;
+}
+
+
+footer::before{
+  content: "";
+  top: 0;
+  bottom: 0;left: 0;right: 0;
+  background-image: url('https://media.asiaone.com/sites/default/files/styles/article_main_image/public/original_images/Apr2021/133947316_xl.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  background-color: #0000004b;
+    width: 100%;
+    height: 80vh;
+   
+}
+
+#banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+ 
+}
+
+.contain-nav{
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  background-color: #105531;
+  z-index: 1;
+  position: fixed;
+  /* display: flex; */
+}
+
+#logo{
+  height: 85px;
+  width: 65px;
+  padding-bottom: 20px;
+}
+
+/* .logo-text{
+  min-width: 277px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #502D14;
+  text-align: center;
+  font-family: "Nico Moji";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15.5%; 4.65px
+  padding-left: 10px;
+  padding-top: 35px;
+} */
+
+.btn-nav-items{
+height: 100% !important;
+padding-right: 20px !important;
+font-size: 20px !important;/* Kích thước chữ */
+padding: 10px 20px !important; /* Khoảng cách bên trong */
+text-align: center !important; /* Căn giữa nội dung */
+font-family: Poppins !important;
+color: #eee7e3 !important;
+font-style: bold !important;
+}
+
+/* 
+.icon_link_shop{
+  display:flex !important;
+  align-items:flex-end !important;
+  z-index: 3 !important;
+}
+
+.login_text{
+  text-decoration: none !important;
+  color: #eee7e3 !important;
+} */
+
+
+.list_diff_page_items a{
+  text-decoration: none;
+  font-family: Poppins;
+}
+
+.offcanvas,
+.offcanvas-header{
+   background-color: #7874745f !important;
+}
+
+.nav__bar{
+  margin: 0 50px;
+}
+
+.main-content{
+    font-size: 64px;
+    font-family: Poppins; 
+    margin-top: 30px;
+}
+
+.container-video{
+    margin-top: 80px;
+}
+
+.video-section{
+    margin-bottom: 50px;
+    padding-right: 40px;
+}
+ 
+.container-content{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: antiquewhite;
+}
+
+.content-header{
+    flex-shrink: 0; 
+    color: #502D14;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Poppins; 
+    font-size: 70px; 
+
+}
+
+
+.process-section{
+    margin-top: 100px;
+}
+
+
+.materials-section{
+    margin-bottom: 90px;
+    margin-top: 90px;
+}
+
+
+.materials-content{
+    padding-left: 120px;
+    padding-top: 5%;
+}
+
+
+.content-image1{
+    padding-right: 100px;  
+    
+}
+
+.img1{
+  border-radius: 15%;
+
+}
+
+.img1:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+/* .img-fluid ni là lớp có sẵn bt đừng css nghe  */
+.img-fluid{
+  border-radius: 15%;
+  margin-top: 50px;
+}
+
+.img-fluid:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.main-3{
+  font-family: Poppins;
+  font-size: 24px;
+}
+
+.line{
+  border: 1px solid #145015;
+}
+
+/* Responsive styles for mobile and tablet */
+/* @media (max-width: 768px) {
+
+  .logo-text{
+    font-size: 15px;
+  }
+
+  .nav__bar{
+    display: none !important;
+  }
+
+  .nav_btn{
+    display: block !important;
+  }
+
+  .video-section, .materials-section, .process-section {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .container-video, .content-image1, .content-image2, .container-content {
+    width: 100% !important;
+  }
+
+  .content-header {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .main-content {
+    font-size: 32px;
+  }
+
+  .main-3 {
+    font-size: 18px;
+  }
+
+ .process-section {
+    margin-top: 30px;
+}
+
+  .materials-section{
+    margin-top: 30px;
+}
+
+  .video-section{
+    margin-top: 30px;
+  }
+
+  .materials-content {
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  
+  .content-image1, .content-image2 {
+    padding: 0 !important;
+    margin-top: 20px !important;
+  }
+} */
+
+/* Responsive styles for tablet and up */
+/* @media (min-width: 768px) and (max-width: 927px) {
+  .nav__bar{
+    display: inline-block !important;
+  }
+
+  .nav_btn{
+    display: none !important;
+  }
+
+  .video-section, .materials-section, .process-section {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .container-video, .content-image1, .content-image2, .container-content, video {
+    width: 100% !important;
+  }
+
+  .content-header {
+    font-size: 32px;
+  }
+
+  .main-content {
+    font-size: 32px;
+  }
+
+  .main-3 {
+    font-size: 24px;
+  }
+
+  .materials-content {
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  
+  .content-image1, .content-image2 {
+    padding: 0 !important;
+    margin-top: 20px !important;
+  }
+
+  .logo-text{
+    font-size: 15px;
+  }
+
+  .btn btn-nav-items{
+    font-size: 15px;
+  }
+} */
+
+/* @media screen and (min-width:427px) {
+  .content1{
+    width: 50%;
+    padding-left: 20px;
+  }
+  .main-content{
+    padding: 0 10%;
+
+    }
+} */
+
+
+/* @media (max-width:426px) {
+  .video{
+    width: 140% !important;
+    height: 120% !important;
+  }
+.main-content{
+  padding: 0 10%;
+}
+  .container-content{
+    padding: 0;
+    width: 100% !important;
+  }
+  .video-section{
+    margin: 0;
+    padding: 0;
+  }
+} */
+
+/* Styles for mobile devices (portrait and landscape) */
+.video{
+  height: 100%;
+  width: 100%;
+}
+@media  (max-width: 426px) {
+  .nav__bar{
+    display: none !important;
+  }
+  .nav_btn{
+    display: block !important;
+  }
+  .logo-text{
+    font-size: 15px !important;
+  }
+  .video-section, .materials-section, .process-section {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .content-header{
+    font-size: 40px !important;
+  }
+  .logo-text{
+    font-size: 30px !important; 
+    color: #502D14 !important;
+    text-align: center !important;
+    font-family: "Nico Moji" !important;
+    line-height: 10.5% !important; /* 4.65px */
+  }
+  .main-content{
+    padding-left: 20px;
+  }
+  .content-image1{
+    padding: 0;
+  
+  }
+  .img1{
+    margin: 0;
+ 
+  }
+  .materials-content{
+    padding: 0;
+    width: 300px !important;
+  }
+  #content2{
+    padding: 0;
+  }
+  .img2{
+    margin: 0;
+  }
+  .main-3{
+    font-size: 20px;
+  }
+}
+
+/* Styles for tablets */
+@media  (min-width: 426px) and (max-width: 768px) {
+  /* lớn hơn đth cho đén màn hình ablet */
+  .btn-nav-items{
+    font-size: 15px !important;
+    text-align: justify;
+  }
+  .logo-text{
+    font-size: 30px !important; 
+    color: #502D14 !important;
+    text-align: center !important;
+    font-family: "Nico Moji" !important;
+    line-height: 10.5% !important; /* 4.65px */
+  }
+  .video-section, .materials-section, .process-section {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .img1{
+    width: 1000px !important;
+    height: 400px !important;
+    margin: 0;
+  }
+  .content-header{
+    font-size: 48px !important;
+    width: 100% !important;
+  }
+ 
+   .materials-content{
+    padding-bottom: 0;
+   }
+   .container-video{
+        padding-left: 120px;
+
+   }
+   .content-header{
+    padding-left: 120px;
+
+   }
+  .main-content{
+    width: 600px !important;
+    padding-left: 120px;
+  }
+  .content-image1{
+    padding: 0; 
+}
+  .video-section{
+    padding: 0;
+    margin: 0;
+  }
+  #header2{
+    padding: 0;
+  }
+  #content2{
+    padding: 0;
+  }
+  #header3{
+    padding: 0;
+  }
+  .img2{
+    margin: 0;
+  }
+
+}
+
+
+.logo-text{
+  min-width: 200px;
+}
+
+
+@media screen and (max-width:768px) {
+/* ccho cả đth và ablet  */
+  .nav__bar{
+    display: none;
+  }
+.video{
+  width: 400px;
+  height: 300px;
+}
+  .content1,.container-video {
+    width:100%;
+  }
+}
+
+
+/* Styles for desktops and laptops */
+@media  screen and (min-width: 769px) {
+  .content1{
+    padding-left: 48px;
+    width: 50%;
+  }
+  .container-video {
+    width: 50%;
+  }
+  .logo-text{
+    font-size: 30px !important; 
+    color: #502D14 !important;
+    text-align: center !important;
+    font-family: "Nico Moji" !important;
+    line-height: 10.5% !important; /* 4.65px */
+  }
+  .nav_btn{
+    display: none !important;
+  }
+  .content-image1{
+    padding-left: 90px;  
+    padding-right: 0;
+  }
+  .img1{
+    width: 500px !important;
+    height: 350px !important;
+    
+  }
+  .img2{
+    margin: 0;
+  }
+  .materials-content{
+    padding-left: 30px;
+  }
+.main-3{
+  font-size: 20px !important;
+}
+.content{
+  margin : 0 !important;
+}
+}
