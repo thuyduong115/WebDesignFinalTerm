@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar 2024</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="CalendarProduct.css">
-</head>
-<body>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- Slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="../navbarandfooter.css">
+    <link rel="stylesheet" type="text/css" href="CalendarProduct.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../Home/img/logo.png" alt="Eco-Guardian Logo" class="logo">
+                <span class="ml-2">ECO-GRUADIAN</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopPage.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HowItWorks/howitworks.html">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Blog/index.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Blog/html/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item cart-icon">
+                        <a class="nav-link" href="../Cart/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <!-- Login Button -->
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ml-2" href="LoginPage/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div id="content-wrapper">
         <div class="column">
             <img id="featured" src="img/Calendar/p2.1.jpg" alt="Featured Image">
@@ -37,58 +94,159 @@
                 <span class="star">&#9733;</span>
                 <span class="star">&#9733;</span>
                 <span class="star">&#9733;</span>
-              </div>
-              <h1 style="font-size: 40px; font-weight: 700;color: #333333;">222.000 VND</h1>
-              <p style="font-size: 24px; font-weight: 600;color: #502D14;" >The messages in this calendar set will bring a little joy, happiness, and healing energy to your soul. <br> <br>
-        
+            </div>
+            <h1 style="font-size: 40px; font-weight: 700;color: #333333;">222.000 VND</h1>
+            <p style="font-size: 24px; font-weight: 600;color: #502D14;">The messages in this calendar set will bring a
+                little joy, happiness, and healing energy to your soul. <br> <br>
+
                 -The calendar set includes: <br>
                 -7 sheets of seed paper corresponding to 12 months + 1 calendar cover <br>
                 -Size A6 (10 x 14 cm) <br>
                 -Weight 200gsm</p>
-                <div class="quantity">
-                    <div class="button">-</div>
-                    <div class="number">0</div>
-                    <div class="button">+</div>
-                </div>
-                <button class="addCartBtn btn-primary">Add to cart</button>
+            <div class="quantity">
+                <div class="button">-</div>
+                <div class="number">0</div>
+                <div class="button">+</div>
+            </div>
+            <button class="addCartBtn btn-primary">Add to cart</button>
         </div>
     </div>
     <hr class="my-4">
     <div class="AlsoLike">
         <h1>You may also like</h1>
         <div class="row">
-            <div class="col-3 mr-5">
+            <div class="col-lg-4 col-md-5 col-sm-10 col-11 mr-5">
                 <img src="img/Envelope/p4.1.jpg" alt="">
                 <h2 style="font-weight: bold; font-size: 28px;">Envelope</h2>
                 <h2 style="font-size: 27px;">44.000 VND</h2>
             </div>
-            <div class="col-3 mr-5">
+            <div class="col-lg-4 col-md-5 col-sm-10 col-11 mr-5">
                 <img src="img/TagName/p5.1.jpg" alt="">
                 <h2 style="font-weight: bold; font-size: 28px">TagName</h2>
                 <h2 style="font-size: 27px;">44.000 VND</h2>
             </div>
-            <div class="col-3">
+            <div class="col-lg-4 col-md-5 col-sm-10 col-11">
                 <img src="img/Wedding invitation/p6.1.jpg" alt="">
                 <h2 style="font-weight: bold; font-size: 28px">Wedding Invitation</h2>
                 <h2 style="font-size: 27px;">11.000 VND</h2>
             </div>
         </div>
     </div>
-    <hr class="my-4">
-    <div class="contact">
-        <a href="https://www.facebook.com/hanhhhhhhhhh.2466666" target="_blank"> 
-            <img style="margin-right: 20px;" src="icon/fbIcon.png" alt="fb">
-        </a>
-        <a href="https://www.instagram.com/phq.hadd/" target="_blank">
-            <img src="icon/igIcon.png" alt="ig">
-        </a>
-    </div>
+    <!-- Customer's Review Section -->
+    <section class="customer-reviews-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Customer's <span class="text-pink">Review</span></h2>
+            <div class="review-slider-container">
+                <div class="review-slide">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>I really love the sprout products from Eco-Guardian. Very easy to grow and add beauty to
+                            my garden!</p>
+                        <div class="reviewer-info">
+                            <img src="../Home/img/reviewer1.jpeg" alt="Reviewer 1" class="img-fluid rounded-circle">
+                            <h5>Cong Hoang</h5>
+                            <p>Happy Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-slide">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Great quality paper! I'm so glad I found Eco-Guardian. The paper is so unique and helps
+                            me feel like I'm contributing to the environment in a small way.</p>
+                        <div class="reviewer-info">
+                            <img src="../Home/img/reviewer2.jpg" alt="Reviewer 2" class="img-fluid rounded-circle">
+                            <h5>Khanh Linh</h5>
+                            <p>Happy Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-slide">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>The customer service at Eco-Guardian is top-notch. They really care about their customers
+                            and ensure that you're satisfied with your purchase.</p>
+                        <div class="reviewer-info">
+                            <img src="../Home/img/reviewer3.jpg" alt="Reviewer 3" class="img-fluid rounded-circle">
+                            <h5>Kim Cuong</h5>
+                            <p>Happy Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider navigation arrows (optional) -->
+            <button class="slick-prev">Previous</button>
+            <button class="slick-next">Next</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-custom py-4">
+        <div class="container text-center">
+            <h2><b><span class="text-brown">ECO-GRUADIAN</span></b></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 470 Tran Dai Nghia</li>
+                        <li><i class="fas fa-phone-alt"></i> 0768457143</li>
+                        <li><i class="fas fa-envelope"></i> ecogruadian@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Pages</h5>
+                    <ul class="list-unstyled justify-content-center">
+                        <li class="mx-2"><a href="../index.html">Home</a></li>
+                        <li class="mx-2"><a href="shopPage.html">Product</a></li>
+                        <li class="mx-2"><a href="../HowItWorks/howitworks.html">How It Works</a></li>
+                        <li class="mx-2"><a href="../Blog/index.html">Blog</a></li>
+                        <li class="mx-2"><a href="../Blog/html/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Banh Mi Team</h5>
+                    <ul class="list-unstyled">
+                        <li>Nguyen Thi Kim Cuong</li>
+                        <li>Tran Thi Thuy Duong</li>
+                        <li>Phan Huu Quoc Hanh</li>
+                        <li>Tran Cong Hoang</li>
+                        <li>Bui Dang Trung Kien</li>
+                        <li>Le Ngoc Khanh Linh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Eco-Guardian. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript">
         let thumbnails = document.getElementsByClassName('thumbnail');
         let activeImages = document.getElementsByClassName('active');
 
         for (let i = 0; i < thumbnails.length; i++) {
-            thumbnails[i].addEventListener('mouseover', function() {
+            thumbnails[i].addEventListener('mouseover', function () {
                 if (activeImages.length > 0) {
                     activeImages[0].classList.remove('active');
                 }
@@ -100,19 +258,19 @@
         let buttonRight = document.getElementById('slideRight');
         let buttonLeft = document.getElementById('slideLeft');
 
-        buttonLeft.addEventListener('click', function() {
+        buttonLeft.addEventListener('click', function () {
             document.getElementById('slider').scrollLeft -= 180;
         });
 
-        buttonRight.addEventListener('click', function() {
+        buttonRight.addEventListener('click', function () {
             document.getElementById('slider').scrollLeft += 180;
         });
         // Quantity
-        const decrementButton = document.querySelector('.quantity .button:first-child'); 
-        const incrementButton = document.querySelector('.quantity .button:last-child'); 
+        const decrementButton = document.querySelector('.quantity .button:first-child');
+        const incrementButton = document.querySelector('.quantity .button:last-child');
         const quantityDisplay = document.querySelector('.quantity .number');
 
-        let quantity = 0; 
+        let quantity = 0;
 
         function updateQuantityDisplay() {
             quantityDisplay.textContent = quantity;
@@ -129,5 +287,9 @@
         });
         updateQuantityDisplay(); 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,97 @@
+
+/* NavBar */
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #F5EED1;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.custom-navbar.hidden {
+    top: -100px;
+}
+
+.navbar .navbar-brand {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #502D14;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar .navbar-brand .logo {
+    height: 40px;
+}
+
+.navbar .nav-link {
+    color: #000;
+    font-size: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.navbar .cart-icon {
+    margin-left: 1.5vw;
+}
+
+.navbar .nav-link.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #F39558;
+    border-color: #fdfdfd00;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #EEC8B1;
+    color: #000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-section h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul.d-flex {
+    justify-content: center;
+}
+
+.footer-section ul.d-flex li {
+    margin: 0 10px;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+}
+
+.footer-section .text-center {
+    margin-top: 20px;
+}
+
+.footer-section h2 .text-brown {
+    color: #502D14;
+}
